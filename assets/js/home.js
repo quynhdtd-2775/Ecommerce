@@ -1,9 +1,9 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 const swiperSlide = $(".swiper-slide");
-const swiperSlideImg = $(".swiper-slide-img")
-const swiperSliceProduct = $(".swiper-wrapper-product")
-const swiperSliceProductNN = $(".product-nn")
+const swiperSlideImg = $(".swiper-slide-img");
+const swiperSliceProduct = $(".swiper-wrapper-product");
+const swiperSliceProductNN = $(".product-nn");
 const blogItemRender = $(".swiper-wrapper-new");
 
 const app = {
@@ -12,113 +12,113 @@ const app = {
       name: "Ớt chuông",
       img: "https://bizweb.dktcdn.net/thumb/compact/100/448/970/collections/cate-1.png?v=1646028861353",
       count: 6,
-      href: "otchuong"
+      href: "otchuong",
     },
 
     {
       name: "Mướp",
       img: "https://bizweb.dktcdn.net/thumb/compact/100/448/970/collections/cate-2.png?v=1646028875540",
       count: 4,
-      href: "muop"
+      href: "muop",
     },
 
     {
       name: "Đu đủ",
       img: "https://bizweb.dktcdn.net/thumb/compact/100/448/970/collections/cate-3.png?v=1646028896397",
       count: 5,
-      href: "dudu"
+      href: "dudu",
     },
 
     {
       name: "Bông cải xanh",
       img: "https://bizweb.dktcdn.net/thumb/compact/100/448/970/collections/cate-4.png?v=1646028920367",
       count: 2,
-      href: "bongcaixanh"
+      href: "bongcaixanh",
     },
 
     {
       name: "Cà chua",
       img: "https://bizweb.dktcdn.net/thumb/compact/100/448/970/collections/cate-5.png?v=1646028939450",
       count: 3,
-      href: "cachua"
+      href: "cachua",
     },
 
     {
       name: "Măng tây",
       img: "https://bizweb.dktcdn.net/thumb/compact/100/448/970/collections/cate-6.png?v=1646028956613",
       count: 1,
-      href: "mangtay"
+      href: "mangtay",
     },
   ],
   imgIntroList: [
-    {name: 'Image1', img : "https://bizweb.dktcdn.net/100/448/970/themes/880534/assets/img_intro_1.jpg?1665456005862"},
-    {name: 'Image2', img : "https://bizweb.dktcdn.net/100/448/970/themes/880534/assets/img_intro_2.jpg?1665456005862"},
-    {name: 'Image3', img : "https://bizweb.dktcdn.net/100/448/970/themes/880534/assets/img_intro_3.jpg?1665456005862"},
+    { name: "Image1", img: "./assets/img/img_intro_1.webp" },
+    { name: "Image2", img: "./assets/img/img_intro_2.webp" },
+    { name: "Image3", img: "./assets/img/img_intro_3.webp" },
   ],
   productItems: [
     {
       name: "Chuối Nam Mỹ",
-      img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/9288721928594580500.jpg?v=1646034554000",
+      img: "./assets/img/ProductItems/chuoi.webp",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
       name: "Táo Mỹ",
-      img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/8.jpg?v=1646034552000",
+      img: "./assets/img/ProductItems/tao.webp",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
       name: "Cà chua bi",
-      img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/23.jpg?v=1646034551000",
+      img: "./assets/img/ProductItems/cachuabi.webp",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
       name: "Bơ Trung Đông",
-      img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/9288725096572122500.jpg?v=1646034550000",
+      img: "./assets/img/ProductItems/botrungdong.webp",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
       name: "Kiwi",
-      img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/30d77e3c804f764c9d87a18cb32f59.png?v=1646034549000",
+      img: "./assets/img/ProductItems/kiwi.webp",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
       name: "Nho Tím",
-      img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/2d4f7a5a67f9c49e99b8f682c25257.jpg?v=1646034548000",
+      img: "./assets/img/ProductItems/nhotim.webp",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
       name: "Cà chua Nam Mỹ",
-      img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/9.jpg?v=1646034547000",
+      img: "./assets/img/ProductItems/cachuanammy.webp",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
       name: "Cà chua hữu cơ",
-      img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/9288723710256318500.jpg?v=1646034546000",
+      img: "./assets/img/ProductItems/cachuahuuco.webp",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
-    }
+      coin: "150.000",
+    },
   ],
   productItemsNN: [
     {
@@ -126,7 +126,7 @@ const app = {
       img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/9288721928594580500.jpg?v=1646034554000",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
@@ -134,7 +134,7 @@ const app = {
       img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/8.jpg?v=1646034552000",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
@@ -142,7 +142,7 @@ const app = {
       img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/6-jpeg.jpg?v=1646033795000",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
@@ -150,7 +150,7 @@ const app = {
       img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/5-jpeg.jpg?v=1646033661000",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
@@ -158,7 +158,7 @@ const app = {
       img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/30d77e3c804f764c9d87a18cb32f59.png?v=1646034549000",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
@@ -166,7 +166,7 @@ const app = {
       img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/2d4f7a5a67f9c49e99b8f682c25257.jpg?v=1646034548000",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
@@ -174,7 +174,7 @@ const app = {
       img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/9.jpg?v=1646034547000",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
+      coin: "150.000",
     },
 
     {
@@ -182,31 +182,34 @@ const app = {
       img: "https://bizweb.dktcdn.net/thumb/large/100/448/970/products/9288723710256318500.jpg?v=1646034546000",
       discount: 20,
       coin_discount: "120.000",
-      coin: "150.000"
-    }
+      coin: "150.000",
+    },
   ],
   blogs: [
     {
-      img: "https://bizweb.dktcdn.net/thumb/grande/100/448/970/articles/untitled-6.jpg?v=1646027190997",
+      img: "./assets/img/untitled-6.webp",
       title: "Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao",
       author: " Caffe team",
       date: "31/12/2022",
-      description: "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi. Khả..."
+      description:
+        "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi. Khả...",
     },
     {
-      img: "https://bizweb.dktcdn.net/thumb/grande/100/448/970/articles/untitled-5.jpg?v=1646027162863",
+      img: "./assets/img/untitled-5.webp",
       title: "Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao",
       author: " Caffe team",
       date: "31/12/2022",
-      description: "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi. Khả..."
+      description:
+        "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi. Khả...",
     },
     {
-      img: "https://bizweb.dktcdn.net/thumb/grande/100/448/970/articles/untitled-4.jpg?v=1646027137757",
+      img: "./assets/img/untitled-4.webp",
       title: "Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao",
       author: " Caffe team",
       date: "31/12/2022",
-      description: "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi. Khả..."
-    }
+      description:
+        "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi. Khả...",
+    },
   ],
   renderVegetable: function () {
     const html = this.vegetableList.map((vegetableItem, index) => {
@@ -232,22 +235,19 @@ const app = {
   },
 
   renderImgIntroList: function () {
-   const imgIntro= this.imgIntroList.map((item, index) => {
-      return (
-        `<a href="">
+    const imgIntro = this.imgIntroList.map((item, index) => {
+      return `<a href="">
             <img src=${item.img} alt=${item.name}>
         </a>
-        `
-      )
+        `;
     });
 
     swiperSlideImg.innerHTML = imgIntro.join(" ");
   },
 
   renderProduct: function () {
-    const productItem = this.productItems.map ((item, index) => {
-      return (
-        `<div class="swiper-slide-product">
+    const productItem = this.productItems.map((item, index) => {
+      return `<div class="swiper-slide-product">
         <div class="wishItem ">
         <div class="product-thumbnail">
           <img style="width: 225px; border-radius: 12px;" src=${item.img} alt="">
@@ -266,17 +266,15 @@ const app = {
           </div>
         </div>
       </div>
-      </div>`
-      )
+      </div>`;
     });
 
-   swiperSliceProduct.innerHTML = productItem.join("")
+    swiperSliceProduct.innerHTML = productItem.join("");
   },
 
   renderProductNN: function () {
-    const productItemnn = this.productItemsNN.map ((item, index) => {
-      return (
-        `<div class="swiper-slide-product">
+    const productItemnn = this.productItemsNN.map((item, index) => {
+      return `<div class="swiper-slide-product">
         <div class="wishItem ">
         <div class="product-thumbnail">
           <img style="width: 225px; border-radius: 12px;" src=${item.img} alt="">
@@ -295,17 +293,15 @@ const app = {
           </div>
         </div>
       </div>
-      </div>`
-      )
+      </div>`;
     });
 
-    swiperSliceProductNN.innerHTML = productItemnn.join("")
+    swiperSliceProductNN.innerHTML = productItemnn.join("");
   },
 
   renderBlog: function () {
     const blogItem = this.blogs.map((item) => {
-      return (
-        `<div class="swiper-slide-new">
+      return `<div class="swiper-slide-new">
         <div class="item_blog_base">
           <img class="item_blog_image" width="293" src=${item.img} alt="">
         </div>
@@ -328,8 +324,7 @@ const app = {
          </p>
         </div>
       </div>
-        `
-      )
+        `;
     });
 
     blogItemRender.innerHTML = blogItem.join("");
